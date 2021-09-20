@@ -71,6 +71,9 @@ button {
   p {
     color: white;
   }
+  &:hover {
+    background-color: hsl(224, 93%, 65%);
+  }
 }
 .navbar {
   img {
@@ -252,6 +255,13 @@ footer.footer {
     height: 30px;
     position: relative;
     margin: 3px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid hsl(224, 93%, 65%);
+      i {
+        color: hsl(224, 93%, 65%);
+      }
+    }
   }
 }
 i {
@@ -260,6 +270,13 @@ i {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+}
+.grid-item {
+  li {
+    &:hover p {
+      color: hsl(224, 93%, 65%);
+    }
+  }
 }
 
 // End of reusable
@@ -282,6 +299,9 @@ i {
     button {
       width: 225px;
     }
+  }
+  footer.footer {
+    padding: 7rem 5rem;
   }
   .center {
     display: flex;
@@ -334,11 +354,24 @@ i {
 
   .grid-container {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d";
+
+    grid-template-areas: "a b c d";
+  }
+  .grid-item {
+    &:nth-of-type(1) {
+      grid-area: a;
+    }
+    &:nth-of-type(2) {
+      grid-area: b;
+    }
+    &:nth-of-type(3) {
+      grid-area: c;
+    }
+    &:nth-of-type(4) {
+      grid-area: d;
+    }
+  }
+  .icon-container {
+    margin-right: 100%;
   }
 }
