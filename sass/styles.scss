@@ -92,6 +92,7 @@ section.top-content {
 }
 .middle-section {
   padding-bottom: 8rem !important;
+  padding-top: 10rem !important;
   p {
     margin-bottom: 1.5rem;
   }
@@ -266,6 +267,15 @@ i {
   body {
     text-align: left;
   }
+  h2 {
+    font-size: 2.3rem;
+  }
+  .top-content {
+    margin-top: 5rem;
+    .bg-image {
+      padding-left: 6rem;
+    }
+  }
   .center {
     display: flex;
     flex-direction: column;
@@ -278,8 +288,17 @@ i {
   .flex-reverse {
     flex-direction: row-reverse;
   }
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
   header.header {
     padding: 4rem;
+  }
+  .middle-section {
+    padding: 10rem 7.5%;
+  }
+  .middle-bg-image {
+    padding-left: 6rem;
   }
   .email-field {
     margin-top: 1rem;
@@ -296,5 +315,13 @@ i {
         flex-basis: 40%;
       }
     }
+  }
+  .see-how {
+    margin-right: 100%;
+  }
+  .testimonial {
+    margin: 4rem 0 0;
+    width: 70%;
+    max-width: 450px;
   }
 }
