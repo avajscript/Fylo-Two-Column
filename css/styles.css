@@ -52,6 +52,7 @@ input {
   border-radius: 5px;
   border: 1px solid black;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 input::placeholder {
@@ -299,6 +300,12 @@ i {
   .top-content .bg-image {
     padding-left: 6rem;
   }
+  .bottom-section {
+    padding: 5rem 4rem !important;
+  }
+  .bottom-section button {
+    width: 225px;
+  }
   .center {
     display: flex;
     flex-direction: column;
@@ -344,5 +351,9 @@ i {
     margin: 4rem 0 0;
     width: 70%;
     max-width: 450px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "a" "b" "c" "d";
   }
 }
