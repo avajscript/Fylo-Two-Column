@@ -188,6 +188,21 @@ section.top-content img {
 
 .flex {
   flex: 1;
+  position: relative;
+}
+
+p.email-text {
+  text-align: left;
+  position: relative;
+  top: -10px;
+}
+
+#email-text-1 {
+  color: #dc143c;
+}
+
+#email-text-2 {
+  color: #f6f6fe;
 }
 
 .flex-right {
