@@ -298,6 +298,9 @@ i {
   body {
     text-align: left;
   }
+  h1 {
+    font-size: 2.5rem;
+  }
   h2 {
     font-size: 2.3rem;
   }
@@ -342,6 +345,7 @@ i {
   }
   .email-field {
     margin-top: 1rem;
+    position: relative;
     input {
       margin: 0 !important;
     }
@@ -386,5 +390,9 @@ i {
   }
   .icon-container {
     margin-right: 100%;
+  }
+  #email-text-1 {
+    position: absolute;
+    top: 60px;
   }
 }
